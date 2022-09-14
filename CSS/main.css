@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+body {
+  background: #b9e7e6;
+  margin: 0;
+  font-family: 'Poppins';
+}
+
+.navbar {
+  background: white;
+  padding: 1em;
+}
+
+.navbar .logo {
+  text-decoration: none;
+  cursor: auto;
+  font-weight: bold;
+  color: black;
+  font-size: 1.2em;
+}
+
+.navbar .logo span {
+  color: #2ed6f3;
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .mobile-menu {
+  cursor: pointer;
+}
+
+a {
+  color: #444444;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+.hero {
+  text-align: center;
+  height: 600px;
+  background-image: url("../image/hero.jpg");
+}
+
+.hero .container {
+  margin-top: 250px;
+}
+
+.hero .head {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #572d28;
+  font-size: 1.5em;
+}
+
+.hero .publisher-cta {
+  background: #0e6372;
+  color: white;
+  text-decoration: none;
+  padding: .6em 1.3em;
+  font-weight: bold;
+  border-radius: 5em;
+  display: inline-block;
+}
+
+section.login-cta {
+  background-image: url("../image/bg.jpg");
+}
+
+section.feature-cta {
+  text-align: center;
+  padding: 2em 1em;
+  width: 80%;
+  margin: 0 auto 5em auto;
+}
+
+section.feature-cta img {
+  width: 20em;
+  height: 20em;
+}
+
+section.footer {
+  text-align: center;
+  background-color: white;
+  padding: 1em 1em;
+}
+
+section.footer .logo {
+  text-decoration: none;
+  cursor: auto;
+  font-weight: bold;
+  color: black;
+  font-size: 1.2em;
+}
+
+section.footer .logo span {
+  color: #2ed6f3;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+label {
+  display: block;
+  font-size: .8em;
+  margin-bottom: .5em;
+}
+
+input {
+  width: 80%;
+  padding: .8em;
+  margin-bottom: 1em;
+  border-radius: .3em;
+  border: 1px solid gray;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.sign-in {
+  background-color: #128ba0;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+  border: none;
+  margin-bottom: 3em;
+  border-radius: 1em;
+  display: inline-block;
+  padding: .8em 2em;
+  width: unset;
+  cursor: pointer;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background: #c1d6cf;
+  height: 100vh;
+  padding: 1em;
+}
+
+nav ul.primary-nav {
+  margin-top: 4em;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav li a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: .5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+nav li a:hover {
+  font-weight: bold;
+}
+
+.mobile-menu-exit {
+  float: right;
+  margin: .5em;
+  cursor: pointer;
+  color: #0c0c0c;
+}
+
+@media only screen and (min-width: 600px) {
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 180px auto;
+        grid-template-columns: 180px auto;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar nav a {
+    color: black;
+    font-size: 1em;
+    padding: .1em 1em;
+  }
+  .navbar nav ul.primary-nav {
+    margin: 0;
+  }
+  section.login-cta .container {
+    text-align: center;
+  }
+  section.login-cta input {
+    width: 412px;
+    padding: .8em;
+    margin-bottom: 1em;
+    border-radius: .3em;
+    border: 1px solid gray;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+/*# sourceMappingURL=main.css.map */

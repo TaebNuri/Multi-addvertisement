@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#interface{
+    width: calc(100% - 300px);
+    margin-left: 300px;
+    position: relative;
+    .hero{
+        width: 100%;
+        height: 100vh;
+        background: #5d5986;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        form{
+            width: 90%;
+            max-width: 600px;
+            .input-group{
+                margin-bottom: 30px;
+                position: relative;
+                input, textarea{
+                    width: 100%;
+                    padding: 10px;
+                    outline: 0;
+                    border: 1px solid #fff;
+                    background: transparent;
+                    font-size: 15px;
+                }
+                label{
+                    height: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    padding: 10px;
+                    color: #fff;
+                    cursor: text;
+                    transition: 0.2s;
+                }
+            }
+            button{
+                padding: 10px 0;
+                color: #fff;
+                outline: none;
+                background: transparent;
+                border: 1px solid #fff;
+                width: 100%;
+                cursor: pointer;
+            }
+        }
+    }
+
+    input:focus~label,
+    input:valid~label,
+    textarea:focus~label,
+    textarea:valid~label{
+        top: -35px;
+        font-size: 0px;
+    }
+
+    .row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .input-group{
+            flex-basis: 48%;
+        }
+    }
+}
+a.logo-cta{
+    text-decoration: none;
+    cursor: auto;
+    font-weight: bold;
+    color: rgb(250, 246, 246);
+    font-size: 2em;
+    margin: 10px 0 0 34px;
+    
+
+    span{
+        color:rgb(46, 214, 243);
+    }
+}
+
+#menu{
+    background: #111827;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#menu .logo{
+    padding:50px 0 0 0;
+}
+
+#menu .items{
+    margin-top: 40px;
+
+    li{
+        list-style: none;
+        padding: 15px 0;
+        transition: 0.3s ease;
+
+        i{
+            color: rgb(124, 124, 124);
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            font-size: 14px;
+            margin: 0 10px 0 25px;
+        }
+
+        a{
+            text-decoration: none;
+            color: rgb(134, 141, 151);
+            font-weight: 300px;
+            transition: 0.3s ease;
+        }
+    }
+}
+
+//hover efect
+#menu .items li:hover{
+     background: #253047;
+     cursor: pointer;
+}
+
+#menu .items li:nth-child(5){
+    border-left: 4px solid #fff;
+}
+
+#menu .items li:hover i, #menu .items li:hover a{
+    color: #f3f4f6;
+}

@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Poppins';
+    background-color: rgb(122, 216, 240);
+}
+
+.head{
+    background-image: url('../image/admin.jpg');
+    padding: 5em 4em 5em 3em;
+
+    h1{
+        font-size: 3em;
+        color: rgb(122, 216, 240);
+    }
+}
+
+section.admin-feature{
+    ul{
+        text-decoration: none;
+        margin: 2em;
+        li{
+            list-style-type: none;
+            margin: 2em;
+            a{
+                text-decoration: none;
+                text-align: center;
+                color:rgb(66, 70, 70);   
+                font-size: 1em;
+                display: block;
+                border: .2em solid rgb(94, 76, 76);
+                border-radius: 2em;
+                padding: .4em;
+
+                &:hover{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

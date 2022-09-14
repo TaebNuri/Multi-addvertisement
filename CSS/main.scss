@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body{
+    background: #b9e7e6;
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+.navbar{
+    background: white;
+    padding: 1em;
+
+    .logo{
+        text-decoration: none;
+        cursor: auto;
+        font-weight: bold;
+        color: black;
+        font-size: 1.2em;
+
+        span{
+            color:rgb(46, 214, 243);
+        }
+    }
+
+    nav{
+        display:none;
+    }
+    
+    .container{
+        display: flex;
+        place-content: space-between;
+    }
+
+    .mobile-menu{
+        cursor: pointer;
+    }
+
+}
+
+a{
+    color: #444444;
+}
+
+section{
+    padding: 5em 2em;
+}
+
+.hero{
+    text-align: center;
+    height: 600px;
+    background-image: url("../image/hero.jpg");
+
+    .container{
+        margin-top: 250px;
+    }
+
+    .head{
+        text-transform: uppercase;
+        font-weight: bold;
+        color:rgb(87, 45, 40);
+        font-size: 1.5em;
+    }
+
+    .publisher-cta{
+        background: rgb(14, 99, 114);
+        color: white;
+        text-decoration: none;
+        padding: .6em 1.3em;
+        font-weight: bold;
+        border-radius: 5em;
+        display:inline-block;
+    }
+}
+
+section.login-cta{
+    background-image: url('../image/bg.jpg');
+    
+}
+
+section.feature-cta{
+    text-align: center;
+    padding: 2em 1em;
+    width: 80%;
+    margin: 0 auto 5em auto;
+
+    img{
+        width: 20em;
+        height: 20em;
+    }
+}
+
+section.footer{
+    text-align: center;
+    background-color: white;
+    padding: 1em 1em;
+
+    .logo{
+        text-decoration: none;
+        cursor: auto;
+        font-weight: bold;
+        color: black;
+        font-size: 1.2em;
+
+        span{
+            color:rgb(46, 214, 243);
+        }
+    }
+}
+
+h2{
+    font-size: 1.2em;
+}
+
+label{
+    display: block;
+    font-size: .8em;
+    margin-bottom: .5em;
+}
+
+input{
+    width: 80%;
+    padding: .8em;
+    margin-bottom: 1em;
+    border-radius: .3em;
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+
+.sign-in{
+    background-color: rgb(18, 139, 160);
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    border: none;
+    margin-bottom: 3em;
+    border-radius: 1em;
+    display: inline-block;
+    padding: .8em 2em;
+    width: unset;
+    cursor: pointer;
+}
+
+nav.menu-btn{
+    display: block;
+}
+
+nav{
+    position: fixed;
+    z-index: 999;
+    width: 66%;
+    right: 0;
+    top: 0;
+    background: rgb(193, 214, 207);
+    height: 100vh;
+    padding: 1em;
+
+    ul.primary-nav{
+        margin-top: 4em;
+    }
+
+    li{
+        list-style-type: none;
+
+        a{
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            display: block;
+            padding: .5em; 
+            font-size: 1.3em;
+            text-align: right; 
+            
+            &:hover{
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.mobile-menu-exit{
+    float: right;
+    margin: .5em;
+    cursor: pointer;
+    color: rgb(12, 12, 12);
+}
+
+@media only screen and (min-width: 600px) {
+
+    .mobile-menu, .mobile-menu-exit {
+        display: none;
+    }
+
+    .navbar .container{
+        display: grid;
+        grid-template-columns: 180px auto;
+        justify-content: unset;
+    }
+
+    .navbar nav{
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+        
+        ul{
+            display: flex;
+        }
+
+        a{
+            color: black;
+            font-size: 1em;
+            padding: .1em 1em;
+        }
+
+        ul.primary-nav{
+            margin: 0;
+        }
+    }
+
+
+
+    section.login-cta{
+
+        .container{
+            text-align: center;
+        }
+
+        input{
+            width: 412px;
+            padding: .8em;
+            margin-bottom: 1em;
+            border-radius: .3em;
+            border: 1px solid gray;
+            box-sizing: border-box;
+        }
+    }
+
+
+}
+
+

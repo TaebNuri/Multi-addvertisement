@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+#interface {
+  width: calc(100% - 300px);
+  margin-left: 300px;
+  position: relative;
+}
+
+#interface .hero {
+  width: 100%;
+  height: 100vh;
+  background: #5d5986;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#interface .hero form {
+  width: 90%;
+  max-width: 600px;
+}
+
+#interface .hero form .input-group {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+#interface .hero form .input-group input, #interface .hero form .input-group textarea {
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  border: 1px solid #fff;
+  background: transparent;
+  font-size: 15px;
+}
+
+#interface .hero form .input-group label {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  color: #fff;
+  cursor: text;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#interface .hero form button {
+  padding: 10px 0;
+  color: #fff;
+  outline: none;
+  background: transparent;
+  border: 1px solid #fff;
+  width: 100%;
+  cursor: pointer;
+}
+
+#interface input:focus ~ label,
+#interface input:valid ~ label,
+#interface textarea:focus ~ label,
+#interface textarea:valid ~ label {
+  top: -35px;
+  font-size: 0px;
+}
+
+#interface .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#interface .row .input-group {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+}
+
+a.logo-cta {
+  text-decoration: none;
+  cursor: auto;
+  font-weight: bold;
+  color: #faf6f6;
+  font-size: 2em;
+  margin: 10px 0 0 34px;
+}
+
+a.logo-cta span {
+  color: #2ed6f3;
+}
+
+#menu {
+  background: #111827;
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#menu .logo {
+  padding: 50px 0 0 0;
+}
+
+#menu .items {
+  margin-top: 40px;
+}
+
+#menu .items li {
+  list-style: none;
+  padding: 15px 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+#menu .items li i {
+  color: #7c7c7c;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 14px;
+  margin: 0 10px 0 25px;
+}
+
+#menu .items li a {
+  text-decoration: none;
+  color: #868d97;
+  font-weight: 300px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+#menu .items li:hover {
+  background: #253047;
+  cursor: pointer;
+}
+
+#menu .items li:nth-child(5) {
+  border-left: 4px solid #fff;
+}
+
+#menu .items li:hover i, #menu .items li:hover a {
+  color: #f3f4f6;
+}
+/*# sourceMappingURL=complainP.css.map */
